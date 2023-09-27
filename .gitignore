@@ -1,0 +1,7 @@
+*.pyc
+*.csv
+venv
+.vs/*
+.vscode/*
+.idea/*
+*__pycache__/*
