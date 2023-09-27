@@ -42,6 +42,18 @@ class Hero():
     def health(self):
         return self.__health
 
+    @property.setter
+    def damage(self, new_damage):
+        self.__damage = new_damage
+
+    @property.setter
+    def armour(self, new_armour):
+        self.__armour = new_armour
+
+    @property.deleter
+    def armour(self):
+        print("Броня обнулена, новое значение 0")
+
     def __str__(self):
         return f'''HERO: {self.coord_x},\n
         {self.coord_y},\n
